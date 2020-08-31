@@ -1,0 +1,55 @@
+//
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #f9d608;
+$primary-invert: findColorInvert($primary);
+$secondary: #064687;
+$secondary-invert: findColorInvert($secondary);
+$orange: #ff8949;
+$orange-invert: findColorInvert($orange);
+$yellow: #ef5281;
+$yellow-invert: findColorInvert($yellow);
+$green: #944b9c;
+$green-invert: findColorInvert($green);
+
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+
+$dark2: #604c46;
+$dark2-invert: findColorInvert($dark2);
+$light2: #fcfcfc;
+$light2-invert: findColorInvert($light2);
+
+// Setup $colors to use as bulma classes (e.g. 'is-dark2')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "secondary": ($secondary, $secondary-invert),
+    "orange": ($orange, $orange-invert),
+    "yellow": ($yellow, $yellow-invert),
+    "green": ($green, $green-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+
+    "dark2": ($dark2, $dark2-invert),
+    "light2": ($light2, $light2-invert),
+    "twitter": ($twitter, $twitter-invert)
+);
+$menu-item-active-background-color: #d3a10c;
+$menu-label-color: #fff;
+$menu-item-color: #fff;
+$menu-item-radius: 10px;
+$card-background-color: $light2;
+$card-color: #fff;
+$card-header-color: #fff;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
